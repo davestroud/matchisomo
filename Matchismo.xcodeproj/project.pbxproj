@@ -98,9 +98,6 @@
 		63F95BB617D3A5AF007C4EC4 /* Matchismo */ = {
 			isa = PBXGroup;
 			children = (
-				63F95BBF17D3A5AF007C4EC4 /* Card_GameAppDelegate.h */,
-				63F95BC017D3A5AF007C4EC4 /* Card_GameAppDelegate.m */,
-				63F95BC817D3A5AF007C4EC4 /* MainStoryboard.storyboard */,
 				63F95C0017D61C3E007C4EC4 /* Model */,
 				63F95BCB17D3A5AF007C4EC4 /* Card_GameViewController.h */,
 				63F95BCC17D3A5AF007C4EC4 /* Card_GameViewController.m */,
@@ -112,6 +109,8 @@
 		63F95BB717D3A5AF007C4EC4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				63F95BBF17D3A5AF007C4EC4 /* Card_GameAppDelegate.h */,
+				63F95BC017D3A5AF007C4EC4 /* Card_GameAppDelegate.m */,
 				63F95BB817D3A5AF007C4EC4 /* Matchismo-Info.plist */,
 				63F95BB917D3A5AF007C4EC4 /* InfoPlist.strings */,
 				63F95BBC17D3A5AF007C4EC4 /* main.m */,
@@ -136,6 +135,7 @@
 				63F95C0517D62842007C4EC4 /* PlayingCard.m */,
 				63F95C0717D62FFC007C4EC4 /* PlayingCardDeck.h */,
 				63F95C0817D62FFC007C4EC4 /* PlayingCardDeck.m */,
+				63F95BC817D3A5AF007C4EC4 /* MainStoryboard.storyboard */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -302,6 +302,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Matchismo/Matchismo-Prefix.pch";
 				INFOPLIST_FILE = "Matchismo/Matchismo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -313,6 +314,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Matchismo/Matchismo-Prefix.pch";
 				INFOPLIST_FILE = "Matchismo/Matchismo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

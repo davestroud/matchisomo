@@ -9,8 +9,8 @@
 #import "CardMatchingGame.h"
 
 @interface CardMatchingGame()
-@property (strong, nonatomic) NSMutableArray *cards;
-@property (nonatomic) int score;
+@property (strong, nonatomic) NSMutableArray *cards; // of Card
+@property (readwrite, nonatomic) int score;
 @end
 
 @implementation CardMatchingGame
@@ -33,7 +33,6 @@
             } else {
                 self.cards[i] = card;
             }
-            
         }
     }
     
