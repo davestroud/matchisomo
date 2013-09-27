@@ -58,9 +58,8 @@
     return _suit ? _suit : @"?";
 }
 
-+ (NSUInteger) maxRank {
-    return 1;
-}
++ (NSUInteger) maxRank { return [self rankStrings].count-1;}
+
 
 + (NSArray *)rankStrings
 {
