@@ -17,6 +17,7 @@
 
 - (NSMutableArray *)cards
 {
+    if (!cards) _cards = [[NSMutableArray alloc]init]
     return _cards;
 }
 
