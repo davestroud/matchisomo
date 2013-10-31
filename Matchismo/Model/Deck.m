@@ -13,21 +13,15 @@
 
 @end
 
-@implemenation Deck
+@implementation Deck
 
 - (NSMutableArray *)cards
 {
-    if (!cards) _cards = [[NSMutableArray alloc]init]
+    if (!_cards) _cards = [[NSMutableArray alloc]init];
     return _cards;
 }
 
-
-
-
-
-
-- (void)addCard:(Card *)card atTop:(BOOL)atTop
-{
+- (void)addCard:(Card *)card atTop:(BOOL)atTop{
     
     if (atTop)  {
         [self.cards insertObject:card atIndex:0];
@@ -35,13 +29,18 @@
         [self.cards addObject:card];
     }
 }
-
-- (void)addCard:(Card *)card
-{
+- (void)addCard:(Card *)card{
     [self addCard:card atTop:NO];
 }
 
-- (Card *)drawRandomCard {}
+- (Card *)drawRandomCard
+{
+    Card *randomCard = nil;
+    
+    
+    
+    return randomCard;
+}
 
 @end
 
