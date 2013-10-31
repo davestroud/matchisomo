@@ -17,6 +17,7 @@
 }
 
 
+@synthesize suit = _suit;  // because we provide setter AND getter
 
 - (void)setSuit:(NSString *)suit
 {
