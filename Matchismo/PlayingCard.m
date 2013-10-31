@@ -19,25 +19,24 @@
 
 @synthesize suit = _suit;  // because we provide setter AND getter
 
-- (void)setSuit:(NSString *)suit
++ (NSArray *)validSuits
 {
-    if ([@[@"♥️",@"♦️",@"👄",@"💔"]containsObject:suit]){
-        _suit = suit;
-    }
+    return @[@"♥️",@"♦️",@"👄",@"💔"];
 }
 
 
 
 
-
-
-
-
-
+- (void)setSuit:(NSString *)suit
+{
+    if ([[PlayingCard validSuits] containsObject:suit]){
+        _suit = suit;
+    }
+}
 
 - (NSString *)suit
 {
-    return _suit ? _suit :@"?";
+    return _suit ? _suit : @"?";
 }
 
 @end
