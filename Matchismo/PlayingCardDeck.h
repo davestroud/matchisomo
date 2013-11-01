@@ -6,4 +6,9 @@
 //  Copyright (c) 2013 DAVID STROUD. All rights reserved.
 //
 
+#import "Deck.h"
 
+@interface PlayingCardDeck : Deck
+
+
+@end
